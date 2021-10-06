@@ -106,7 +106,7 @@ def getCharsInText():
     [print(key,"appeared", value, "times") for key, value in alphabet.items()]
 
 
-Option3 = '''Implemnt division as a series of subtraction. The program should only deal
+Option3 = '''Implement division as a series of subtraction. The program should only deal
 with integers and report a remainder if there is one.'''
 def divisionAsSubtractionSeries():
     cls()
