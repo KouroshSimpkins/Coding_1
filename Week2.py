@@ -1,6 +1,7 @@
 # Kourosh Simpkins
 
 import os
+import sys
 import time
 # increases legibility of my info page
 import textwrap as tr
@@ -96,7 +97,7 @@ def getCharsInText():
             key = text[i]
             if key in alphabet:
                 alphabet[key] += 1
-        # TODO: #1 Fix this stupid error catcher
+        #TODO: #1 Fix this stupid error catcher
         except:
             print("an exception has occurred")
             time.sleep(3)
@@ -165,7 +166,7 @@ def main():
             divisionAsSubtractionSeries()
             input("Press Enter to return to the menu")
         elif choice.lower() == "q":
-            quit()
+            sys.exit()
         elif choice.lower() == "i":
             cls()
             # Just a basic information screen
