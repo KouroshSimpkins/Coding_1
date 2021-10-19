@@ -52,19 +52,23 @@ def pygLatinWords(original):
 
 
 def pygLatinSentence():
+    """take input of sentence to be converted to pygLatin"""
 
     original = getInput()
 
     originalList = original.split()
     outputList = []
 
-    for i in range(len(originalList)):
-        outputList.append(pygLatinWords(originalList[i]))
+    for i, word in enumerate(originalList):     # pylint: disable=unused-variable
+        # removing i causes this to break, even though we never use i. No idea why
+        # Easier to just leave i here.
+        outputList.append(pygLatinWords(word))
 
     return outputList
 
 
 def main():
+    """main function, if program is run from this file"""
     print(*pygLatinSentence())
 
 if __name__ == '__main__':
