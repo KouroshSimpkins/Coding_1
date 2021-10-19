@@ -1,4 +1,4 @@
-import math
+"""Week 1 of Coding 1"""
 
 try:
     value = float(input(("Please input a number to test: ")))
