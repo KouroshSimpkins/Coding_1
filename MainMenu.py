@@ -15,9 +15,9 @@ def main():
         userChoice = input("Select a week number > ")
         if userChoice == "2":
             Week2.cls()
-            print("1 = ", Week2.Option1)
+            print("1 = ", Week2.threeIntegers.__doc__)
             print()
-            print("2 = ", Week2.Option2)
+            print("2 = ", Week2.getCharsInText.__doc__)
             print()
             print("3 = ", Week2.Option3)
             print()

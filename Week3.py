@@ -11,7 +11,6 @@ def getInput():
     return value
 
 
-
 def greeting():
     """Make a function that takes two arguments, the second of which is optional.
     Print a greeting that varies depending on how many arguments are provided."""
@@ -27,11 +26,9 @@ def greeting():
     return output
 
 
-def pygLatinWords():
+def pygLatinWords(original):
     """Write a function that takes in any English word and turns it into pig latin.
     Extra if you can write another function that converts a whole sentence"""
-
-    original = getInput()
 
     vowels = ['a','e','i','o','u']
 
@@ -52,3 +49,23 @@ def pygLatinWords():
         original = original[index_value:] +original[:index_value]+ "ay"
 
     return original
+
+
+def pygLatinSentence():
+
+    original = getInput()
+
+    originalList = original.split()
+    outputList = []
+
+    for i in range(len(originalList)):
+        outputList.append(pygLatinWords(originalList[i]))
+
+    return outputList
+
+
+def main():
+    print(*pygLatinSentence())
+
+if __name__ == '__main__':
+    main()
