@@ -37,8 +37,10 @@ def threeIntegers():
         temp = 0
 
         #iterate through array, pulling += on each and storing in temp
-        for i in range(len(third_num_arr)):
-            temp += third_num_arr[i]
+        for i, number in enumerate(third_num_arr): #pylint: disable=unused-variable
+            # Once again, unused variable, but removing i breaks the function
+            # REMOVING I BREAKS THE LOOP PYLINT. IT'S OBVIOUSLY AN IMPORTANT VARIABLE PYLINT.
+            temp += number
 
         return temp
 
@@ -85,8 +87,9 @@ def getCharsInText():
     """Given a string of text, print the number of times each letter
     in the alphabets a-z appear."""
 
-    cls()
-    # Create a dictionary which stores the alphabet alongside a value, which will change depending on the number of times a letter appears.
+    #cls()
+    # Create a dictionary which stores the alphabet alongside a value,
+    # which will change depending on the number of times a letter appears.
     alphabet = {'a':0,'b':0,'c':0,'d':0,'e':0,'f':0,'g':0,'h':0,'i':0,'j':0,'k':0,'l':0,'m':0,'n':0,'o':0,'p':0,'q':0,'r':0,'s':0,'t':0,'u':0,'v':0,'w':0,'x':0,'y':0,'z':0}
 
     text = str(input("Please enter some text to evaluate: "))
@@ -96,11 +99,16 @@ def getCharsInText():
 
     # loops through each item in the input string, and checks against the dictionary
     for i in range(len(text)):
-        # as long as the string is within the dictionary (as a key), then it should be possible to increment it's associated value, as is assumed here.
-        # (This is a really shit implementation, it doesn't take into accont any possible garbage that is put in)
-        # i.e. if the user enters anything that is not in the dictionary, the loop breaks and the entire thing returns to the main menu
-        # not sure why it's not printing my exception command, which was the whole point of this try except block
-        # all in all, might come back to this, but the logic works, it's just my error catching that seems to be crap.
+        # as long as the string is within the dictionary (as a key),
+        # then it should be possible to increment it's associated value, as is assumed here.
+        # (This is a really shit implementation,
+        # it doesn't take into accont any possible garbage that is put in)
+        # i.e. if the user enters anything that is not in the dictionary,
+        # the loop breaks and the entire thing returns to the main menu
+        # not sure why it's not printing my exception command,
+        # which was the whole point of this try except block
+        # all in all, might come back to this, but the logic works,
+        # it's just my error catching that seems to be crap.
         try:
             key = text[i]
             if key in alphabet:
@@ -112,7 +120,7 @@ def getCharsInText():
             break
 
     # Inline for statement, to print the dictionary in a more pleasing format
-    (print(key,"appeared", value, "times") for key, value in alphabet.items())
+    return (print(key,"appeared", value, "times") for key, value in alphabet.items())
 
 
 Option3 = '''Implement division as a series of subtraction. The program should only deal
