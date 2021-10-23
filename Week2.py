@@ -90,7 +90,7 @@ def getCharsInText():
     #cls()
     # Create a dictionary which stores the alphabet alongside a value,
     # which will change depending on the number of times a letter appears.
-    alphabet = {'a':0,'b':0,'c':0,'d':0,'e':0,'f':0,'g':0,'h':0,'i':0,'j':0,'k':0,'l':0,'m':0,'n':0,'o':0,'p':0,'q':0,'r':0,'s':0,'t':0,'u':0,'v':0,'w':0,'x':0,'y':0,'z':0}
+    alphabet = {'a':0,'b':0,'c':0,'d':0,'e':0,'f':0,'g':0,'h':0,'i':0,'j':0,'k':0,'l':0,'m':0,'n':0,'o':0,'p':0,'q':0,'r':0,'s':0,'t':0,'u':0,'v':0,'w':0,'x':0,'y':0,'z':0} #pylint: disable=line-too-long
 
     text = str(input("Please enter some text to evaluate: "))
     # .lower ensures entire input string is stored as lowercase values,
@@ -98,7 +98,7 @@ def getCharsInText():
     text = text.lower()
 
     # loops through each item in the input string, and checks against the dictionary
-    for i in range(len(text)):
+    for i in range(len(text)): #pylint: disable=consider-using-enumerate
         # as long as the string is within the dictionary (as a key),
         # then it should be possible to increment it's associated value, as is assumed here.
         # (This is a really shit implementation,
@@ -114,7 +114,7 @@ def getCharsInText():
             if key in alphabet:
                 alphabet[key] += 1
         #TODO: #1 Fix this stupid error catcher
-        except:
+        except: #pylint: disable=bare-except
             print("an exception has occurred")
             time.sleep(3)
             break
@@ -195,7 +195,7 @@ def main():
             cls()
             # Just a basic information screen
             # Uses the textwrap module to make sure everything remains legible
-            info_str = "This program was written as a solution for Week 2 of the University of the Arts London's BSc in creative computing by Kourosh Simpkins."
+            info_str = "This program was written as a solution for Week 2 of the University of the Arts London's BSc in creative computing by Kourosh Simpkins." #pylint: disable=line-too-long
             print(tr.fill(info_str, width=50))
             print("")
             print("Option 1: ", tr.fill(threeIntegers.__doc__, width=50))
