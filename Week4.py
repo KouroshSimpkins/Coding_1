@@ -11,7 +11,7 @@ def cls():
 
 
 def getList():
-
+    """Take an input from the user"""
     listComplete = False
     outputArray = []
     info_str = "Press 'd' when you have entered all the values for your array"
@@ -25,31 +25,34 @@ def getList():
         else:
             outputArray.append(tmp)
 
-    return(outputArray)
+    return outputArray
 
 
 def multiplyList(arrayToMultiply):
+    """Takes an array and multiplies each element together"""
 
     tmp = 1
 
-    for i in range(len(arrayToMultiply)):
-        tmp = tmp*int(arrayToMultiply[i])
+    for i, number in enumerate(arrayToMultiply): #pylint: disable=unused-variable
+        tmp = tmp*int(number)
 
-    return(tmp)
+    return tmp
 
 
 def wordList(arrayOfWords):
+    """Takes an array of words and returns each combination of two words,
+    apart from where the array would be the same word twice"""
 
     outputArray = []
 
-    for i in range(len(arrayOfWords)):
-        for j in range(len(arrayOfWords)):
+    for i, word1 in enumerate(arrayOfWords):
+        for j, word2 in enumerate(arrayOfWords):
             if i == j:
                 pass
             else:
-                outputArray.append(arrayOfWords[i]+" "+arrayOfWords[j])
+                outputArray.append(word1+" "+word2)
 
-    return(outputArray)
+    return outputArray
 
 
 def main():
@@ -76,8 +79,8 @@ def main():
             cls()
             arrayOfWords = wordList(getList())
             print("final array of words is:")
-            for i in range(len(arrayOfWords)):
-                print(arrayOfWords[i])
+            for i, word in enumerate(arrayOfWords): #pylint: disable=unused-variable
+                print(word)
             input("Press Enter to return to the menu")
         elif choice.lower() == "q":
             sys.exit()
