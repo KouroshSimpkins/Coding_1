@@ -11,7 +11,8 @@ def cls():
 
 
 def getList():
-    """Take an input from the user"""
+    """Take an input from the user in the form of a list. If the user enters 'd'
+    then the list is marked as complete."""
     listComplete = False
     outputArray = []
     info_str = "Press 'd' when you have entered all the values for your array"
