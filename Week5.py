@@ -21,7 +21,7 @@ def caesarShift(text,s):
     """implement a caesar shift, taking 2 inputs, a shift amount and a string.
     returns the output as a string. Takes no arguments."""
     result = ""
-   # transverse the plain text
+    # transverse the plain text
     for i in range(len(text)):
         char = text[i]
         # Encrypt uppercase characters in plain text
@@ -37,6 +37,8 @@ def caesarShift(text,s):
 text = "CEASER CIPHER DEMO"
 s = 4
 
-print("Plain Text : " + text)
-print("Shift pattern : " + str(s))
-print("Cipher: " + caesarShift(text, s))
+#print("Plain Text : " + text)
+#print("Shift pattern : " + str(s))
+#print("Cipher: " + caesarShift(text, s))
+
+print(NATOAlpha())
