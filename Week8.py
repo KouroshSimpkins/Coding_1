@@ -14,7 +14,7 @@ Example command: python3 Week8.py -i cyberspace.txt -o cyberspace_corrected.txt 
 import Levenshtein
 import argparse
 import sys
-
+from string import punctuation
 
 def getArgs():
     """Get the command line arguments."""
@@ -30,7 +30,7 @@ def getWords(file):
     words = []
     with open(file, "r") as f:
         for line in f:
-            words += line.split()
+            words += line.lower().split()
     return words
 
 
@@ -39,7 +39,7 @@ def getDictionary(file):
     words = []
     with open(file, "r") as f:
         for line in f:
-            words += line.split()
+            words += line.lower().split()
     return words
 
 
@@ -51,16 +51,46 @@ def getCorrectedWords(words, dictionary):
     return correctedWords
 
 
-def getCorrectedWord(word, dictionary):
-    """Given a word and a list of dictionary words, return the corrected word."""
+def containsNumber(value):
+    for char in value:
+        if char.isdigit():
+            return True
+    return False
+
+
+def containsPunctuation(value):
+    for char in value:
+        if char in punctuation:
+            return True
+    return False
+
+
+def LevenshteinLoop(word, dictionary):
+    """Loop through the dictionary and return the closest match."""
     minDistance = sys.maxsize
     minWord = ""
     for dictionaryWord in dictionary:
-        distance = Levenshtein.distance(word, dictionaryWord)
+        distance = Levenshtein.distance(word.strip(), dictionaryWord)
         if distance < minDistance:
+            print(word, dictionaryWord, distance)
             minDistance = distance
             minWord = dictionaryWord
     return minWord
+
+
+def getCorrectedWord(word, dictionary):
+    """Given a word and a list of dictionary words, return the corrected word."""
+    if containsNumber(word):
+        return word
+    if containsPunctuation(word):
+        tempWord = word
+        word = word[:-1]
+        punctuation = tempWord[-1]
+        correctedWord = LevenshteinLoop(word, dictionary)
+        return correctedWord + punctuation
+    else:
+        correctedWord = LevenshteinLoop(word, dictionary)
+        return correctedWord
 
 
 def writeCorrectedWords(words, file):
