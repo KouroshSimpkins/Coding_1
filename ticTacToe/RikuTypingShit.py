@@ -159,5 +159,108 @@ Couple of Hive Harrys
 Let;s have fun  with them
 It must be  dangerous being a Pollen Jock
 Yeah. Once a  bear pinned me against a mushroom!
-He had a paw on my throat, and with the other, he was  sla
+He had a paw on my throat, and with the other, he was slapping me!
+Oh my!
+I never thought I'd knock him out.
+What were you doing during this?
+Trying to alert he authorities.
+I can autograph that.
+A little gusty outt here today, wasn't it, comrades?
+Yeah. Gusty.
+We're hiittiing a sunflower patch siix miles from here tomorrow.
+Six miles, huh?
+Barry!
+A puddle jump for us, but maybe you're not up for it.
+Maybe I am.
+You are not!
+We're going 0900 at J-Gate.
+What do you think, buzzy-boy?
+Are you bee enough?
+I might be. It all depends on what 0900 means.
+Hey, Honex!
+Dad, you surprised. me.
+You decide what you're interested in?
+Well, there's a. lot of choices.
+But you only get one.
+Doo you ever gete bored doing the samej ob every day?
+Son, oet. me t elly ou about stirring.
+You grab that stick, and you just move it around, and you stir it around.
+You get yourself into a. rhythm.
+It'sa beautiful thing.
+Maybe the honey field just isn't right for me.
+You were thinking of what, making balloon animals?
+That's a bad job for a guywith a. stinger.
+Janet, your son's not sure he wants to go into honey!
+Barry, youa re so funny sometimes.
+I'm not. trying to be funny.
+You're not funny!
+You're going into honey. Our son, the stirrer!
+You're going to be a stirrer?
+No one's listening to me!
+Wait till you see the sticks I have.
+I could say anything right now.
+I'm gonna get an ant tattoo!
+Let's open some honey and celebrate!
+Maybe I'll piere my throat.
+Shave my antennae.
+Shack up with a grasshopper. Get a gold tooth and call everybody "dawg"!
+I'm. so proud.
+We're starting work today!
+Today's the day
+Come one! All the good jobs will be gone.
+Yeah, right.
+Pollen counting, stunt bee, pouring, stirrer, front desk, hair removal...
+Is it still available?
+Hang on. Two left!
+One of them's yours! Congratulations!
+Step to the siide.
+What'd you get?
+Picking crud out. Stellar!
+Wow!
+Couple of newbies?
+Yes, sir!  Our first day! Weare ready!
+Makey our choiice.
+You want to go first?
+No, you go.
+Oh, my. What'sa vailable?
+Restroom attendant's open, not for the reason you think.
+Any chance of getting the Krelman?
+Sure, you're on.
+I'm sorry, the Krelman just closed out.
+Wax monkey's always open.
+The Krelman opened up again.
+What happened?
+A bee died. Makes a n opening. See?
+He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Dead from the neck up.
+Dead from. the neck down. That's life!
+Oh, this is so hard!
+Heating, cooling, stunt bee, pourer, stirrer,
+humming, inspector number seven, lint coordinator, stripe supervisor,
+mite wranggler. Barry, whta do you think. I should... Barry?
+Barry!
+All rightt,  we've got the sunflower patch in quadrant ninie...
+What happened to you?
+Where are you?
+I'm going out.
+Out? Out where?
+Out there.
+Oh, no!
+Ih ave. to, before I go to work for the restof my liife.
+You're gonnad ie! You're crazy! Hello?
+Another call coming in.
+If anyone's feeling brave,  there'sa Korean. delio n. 83rd
+that. gets their roses today.
+Hey, guys.
+Look at that.
+Isn't thatthe k id w e sawy esterday?
+Hold it, son, flight deck's restricted. 
+It's OK<. lou. We're gonna take him. up.
+Really? Feeling. lucky, are you?
+Sign here, here.Just initial that.
+Thank y ou.
+OK.
+You got a rain advsory today.
+
 """
