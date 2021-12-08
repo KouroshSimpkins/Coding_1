@@ -80,7 +80,7 @@ def game(word):
         print("lives: ", LIVES)
         print("guessed letters: ", GUESSED_LETTERS)
         blanks = userInput(wordlist, blanks)
-        print(blanks.split())
+        print(blanks)
         input("Press Enter to return to continue...")
     if win(wordlist, blanks) == True:
         print("You win!")
