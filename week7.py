@@ -9,25 +9,26 @@ def draw_polygon(side_length, number_of_sides):
     
     t.done()
 
-#draw_polygon(100, 5)
-
 # Implement a random walker using turtle graphics
 
-screen = t.Screen()
-screen.setup(1000,1000)
-walkers = []
-n = 20
-for i in range(n):
-    walkers.append(t.Turtle())
-for i in range(n):
-    walkers[i].color((random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1)))
-
 def random_walk():
+    screen = t.Screen()
+    screen.setup(1000,1000)
+    n = 20
+    walkers = []
     for i in range(n):
-        angle = random.randint(0,3)*90
-        walkers[i].right(angle)
-        walkers[i].forward(10)
-    screen.update()
-    screen.ontimer(random_walk, 1000//20)
+        walkers.append(t.Turtle())
+    for i in range(n):
+        walkers[i].color(random.random(), random.random(), random.random())
+
+    for i in range(n):
+        walkers[i].penup()
+        walkers[i].setpos(0, 0)
+        walkers[i].pendown()
+        for i in range(150):
+            walkers[i].forward(10)
+            walkers[i].right(random.randint(1, 3)*90)
+
+    t.done()
 
 random_walk()
