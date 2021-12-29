@@ -25,9 +25,12 @@ def random_walk():
         walkers[i].penup()
         walkers[i].setpos(0, 0)
         walkers[i].pendown()
-        for i in range(150):
+        for j in range(150):
             walkers[i].forward(10)
-            walkers[i].right(random.randint(1, 3)*90)
+            rotate = random.randint(0, 3)*90
+            while rotate == 180:
+                rotate = random.randint(0, 3)*90
+            walkers[i].right(rotate)
 
     t.done()
 
